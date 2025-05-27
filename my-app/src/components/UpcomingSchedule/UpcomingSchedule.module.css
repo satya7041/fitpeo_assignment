@@ -1,0 +1,59 @@
+.schedule {
+  margin-top: 2rem;
+}
+
+.schedule h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.scheduleGroup {
+  margin-bottom: 2rem;
+}
+
+.dayHeading {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.75rem;
+}
+
+.cardRow {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.scheduleCard {
+  width: 180px;
+  padding: 0.8rem 1rem;
+  border-radius: 1rem;
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+}
+
+.cardTime {
+  font-size: 0.75rem;
+  color: #555;
+}
+
+.cardIcon {
+  font-size: 1.2rem;
+}
+
+.cardIndigo {
+  background: #e0e7ff;
+  color: #615ec2;
+}

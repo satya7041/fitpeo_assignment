@@ -1,0 +1,123 @@
+.activitySection {
+  width: 90%;
+  max-width: 600px;
+  background-color: rgba(164, 246, 255, 0.141);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.header h3 {
+  font-size: 16px;
+  color: #333;
+  margin: 0;
+}
+
+.subtext {
+  font-size: 12px;
+  color: #888;
+  margin-top: 4px;
+  white-space: nowrap;
+}
+
+.chart {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 120px;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.dayGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 40px;
+  margin-bottom: 12px;
+}
+
+.bars {
+  display: flex;
+  align-items: flex-end;
+  gap: 4px;
+  width: 50px;
+  justify-content: center;
+}
+
+.bar {
+  width: 6px;
+  border-radius: 4px;
+  background-color: #e0e7ff;
+}
+
+.primary {
+  background-color: #4f46e5;
+}
+
+.secondary {
+  background-color: #93c5fd;
+}
+
+.dayLabel {
+  font-size: 11px;
+  color: #888;
+  margin-top: 4px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.verticalStack {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 480px) {
+  .activitySection {
+    width: 95%;
+    padding: 16px;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .chart {
+    height: auto;
+    gap: 8px;
+  }
+
+  .dayGroup {
+    min-width: 30px;
+  }
+
+  .bars {
+    width: 40px;
+    gap: 3px;
+  }
+
+  .bar {
+    width: 5px;
+    border-radius: 3px;
+  }
+
+  .dayLabel {
+    font-size: 10px;
+  }
+}

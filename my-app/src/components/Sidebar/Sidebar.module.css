@@ -1,0 +1,88 @@
+.sidebar {
+  background-color: #d0e9e91d;
+  height: calc(100vh - 72px);
+  padding: 1.5rem 1rem;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.03);
+  left: 9px;
+  border-top-left-radius: 5px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.span1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #21b9f0;
+  margin-bottom: 1.5rem;
+}
+
+.span2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #172d61;
+  margin-bottom: 1.5rem;
+}
+
+h1 {
+  margin-bottom: 1.5rem;
+}
+
+.heading {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #003366;
+  margin-bottom: 1.5rem;
+  align-self: stretch;
+  text-align: left;
+  padding-left: 1rem;
+}
+
+.navList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navItem {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 2px;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  color: #444;
+  transition: background-color 0.3s;
+}
+
+.navItem:hover {
+  background-color: #ddeeff;
+}
+
+.icon {
+  margin-right: 0.75rem;
+  color: #0055aa;
+}
+
+.label {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.sidebarContent {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.settingsWrapper {
+  margin-top: auto;
+  width: 100%;
+  padding-top: 1rem;
+  border-top: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+}

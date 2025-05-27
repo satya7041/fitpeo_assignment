@@ -1,0 +1,107 @@
+.anatomy {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1rem;
+  gap: 8rem;
+}
+
+.mainSection {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.mainImage {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+.cardsSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  flex: 1;
+  max-width: 300px;
+}
+
+.card {
+  background: #beebeb43;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.imageRow {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.image {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.date {
+  font-size: 0.9rem;
+  color: #888;
+  margin-top: 0.3rem;
+}
+
+.rateBarLung,
+.rateBarTeeth,
+.rateBarBone {
+  width: 100%;
+  height: 8px;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 0.5rem;
+}
+
+.rateFillLung {
+  height: 100%;
+  background-color: #af5e60;
+  border-radius: 4px 0 0 4px;
+}
+
+.rateFillTeeth {
+  height: 100%;
+  background-color: #6adad2;
+  border-radius: 4px 0 0 4px;
+}
+
+.rateFillBone {
+  height: 100%;
+  background-color: #ee8036;
+  border-radius: 4px 0 0 4px;
+}
+
+@media (max-width: 768px) {
+  .anatomy {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .mainSection {
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+  .cardsSection {
+    max-width: 100%;
+  }
+}

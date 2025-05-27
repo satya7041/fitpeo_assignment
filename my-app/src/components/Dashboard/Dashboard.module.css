@@ -1,0 +1,41 @@
+.dashboardContainer {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 15%;
+  min-width: 220px;
+  background-color: #eefcff;
+  height: 100vh;
+  overflow-y: auto;
+  position: sticky;
+  top: 0;
+  border-top-left-radius: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.03);
+}
+
+.contentArea {
+  padding: 1rem 2rem;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.calendar {
+  width: 40%;
+  background-color: #fff;
+  height: 100vh;
+  border-left: 1px solid #eee;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+.h2name {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
