@@ -1,19 +1,8 @@
-import styles from "./ActivityFeed.module.css";
+import React from 'react';
+import { data, days } from '../../data/ActivityData';  // Import data and days
+import styles from './ActivityFeed.module.css';
 
 const ActivityFeed = () => {
-  const data = [
-    [100, 50, 25, 25, 20],  // Mon
-    [100, 50, 25, 25, 20],  // Mon
-    [100, 50, 25, 25, 20],  // Mon
-    [100, 50, 25, 25, 20],  // Mon
-    [100, 50, 25, 25, 20],  // Mon
-    [100, 50, 25, 25, 20],  // Mon
-    [100, 50, 25, 25, 20],  // Mon
-                   // Sun
-  ];
-
-  const days = ["Mon", "Tues", "Wed", "Thurs", "Fri", "Sat", "Sun"];
-
   return (
     <div className={styles.activitySection}>
       <div className={styles.header}>

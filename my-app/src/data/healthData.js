@@ -1,24 +1,26 @@
-const healthData = [
-  {
-    label: "Healthy Heart",
-    status: "healthy",
-    date: "Oct 2, 2021"
-  },
-  {
-    label: "Lungs",
-    status: "issue",
-    date: "Oct 3, 2021"
-  },
-  {
-    label: "Teeth",
-    status: "healthy",
-    date: "Oct 4, 2021"
-  },
-  {
-    label: "Bone",
-    status: "healthy",
-    date: "Oct 5, 2021"
-  }
-];
+// data/HealthData.js
 
-export default healthData;
+import lungImage from '../assets/lung.png';
+import teethImage from '../assets/teeth.png';
+import boneImage from '../assets/bone.png';
+
+export const healthData = [
+  {
+    title: 'Lungs',
+    image: lungImage,
+    date: '26 Oct, 2021',
+    rateWidth: '70%',
+  },
+  {
+    title: 'Teeth',
+    image: teethImage,
+    date: '26 Oct, 2021',
+    rateWidth: '70%',
+  },
+  {
+    title: 'Bone',
+    image: boneImage,
+    date: '26 Oct, 2021',
+    rateWidth: '70%',
+  },
+];

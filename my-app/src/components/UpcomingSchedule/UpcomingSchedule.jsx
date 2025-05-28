@@ -1,55 +1,36 @@
 import React from 'react';
 import styles from './UpcomingSchedule.module.css';
 import { FaHeartPulse, FaEye, FaUserDoctor } from 'react-icons/fa6';
+import { upcomingSchedule } from '../../data/UpcomingSchedule';
 
 const UpcomingSchedule = () => {
   return (
     <div className={styles.schedule}>
       <h3>The Upcoming Schedule</h3>
 
-      {/* Thursday */}
-      <div className={styles.scheduleGroup}>
-        <h4 className={styles.dayHeading}>On Thursday</h4>
-        <div className={styles.cardRow}>
-          <div className={`${styles.scheduleCard} ${styles.cardIndigo}`}>
-            <div className={styles.cardHeader}>
-              <span>Health checkup complete</span>
-              <FaHeartPulse className={styles.cardIcon} />
-            </div>
-            <div className={styles.cardTime}>11:00 AM</div>
-          </div>
+      {upcomingSchedule.map((scheduleDay, index) => (
+        <div key={index} className={styles.scheduleGroup}>
+          <h4 className={styles.dayHeading}>On {scheduleDay.day}</h4>
+          <div className={styles.cardRow}>
+            {scheduleDay.events.map((event, eventIndex) => {
+              // Dynamically import the icon based on the string value
+              const Icon = event.icon === 'FaHeartPulse' ? FaHeartPulse :
+                          event.icon === 'FaEye' ? FaEye :
+                          FaUserDoctor;
 
-          <div className={`${styles.scheduleCard} ${styles.cardIndigo}`}>
-            <div className={styles.cardHeader}>
-              <span>Ophthalmologist</span>
-              <FaEye className={styles.cardIcon} />
-            </div>
-            <div className={styles.cardTime}>14:00 PM</div>
+              return (
+                <div key={eventIndex} className={`${styles.scheduleCard} ${styles.cardIndigo}`}>
+                  <div className={styles.cardHeader}>
+                    <span>{event.title}</span>
+                    <Icon className={styles.cardIcon} />
+                  </div>
+                  <div className={styles.cardTime}>{event.time}</div>
+                </div>
+              );
+            })}
           </div>
         </div>
-      </div>
-
-      {/* Sunday */}
-      <div className={styles.scheduleGroup}>
-        <h4 className={styles.dayHeading}>On Sunday</h4>
-        <div className={styles.cardRow}>
-          <div className={`${styles.scheduleCard} ${styles.cardIndigo}`}>
-            <div className={styles.cardHeader}>
-              <span>Cardiologist</span>
-              <FaHeartPulse className={styles.cardIcon} />
-            </div>
-            <div className={styles.cardTime}>12:00 AM</div>
-          </div>
-
-          <div className={`${styles.scheduleCard} ${styles.cardIndigo}`}>
-            <div className={styles.cardHeader}>
-              <span>Neurologist</span>
-              <FaUserDoctor className={styles.cardIcon} />
-            </div>
-            <div className={styles.cardTime}>16:00 PM</div>
-          </div>
-        </div>
-      </div>
+      ))}
     </div>
   );
 };
