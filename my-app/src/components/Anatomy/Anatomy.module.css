@@ -61,7 +61,7 @@
   margin-top: 0.3rem;
 }
 
-.rateBarLung,
+.rateBarLungs,
 .rateBarTeeth,
 .rateBarBone {
   width: 100%;
@@ -72,7 +72,7 @@
   margin-top: 0.5rem;
 }
 
-.rateFillLung {
+.rateFillLungs {
   height: 100%;
   background-color: #af5e60;
   border-radius: 4px 0 0 4px;
